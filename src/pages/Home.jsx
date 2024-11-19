@@ -1,10 +1,3 @@
-<<<<<<< Updated upstream
-export default function Home() {
-    return (
-      <div>
-        <h2>Welcome to the MRI Analysis Website</h2>
-        <p>This is the home page of Mind Modeler. This page will be used for the uploading of MRI scans, and the viewing of our analyzed outputs.</p>
-=======
 import React, { useState } from 'react';
 import { Button } from '@mui/material'; // Optional for styling
 
@@ -118,8 +111,7 @@ export default function Home() {
         >
           Upload
         </Button>
->>>>>>> Stashed changes
       </div>
-    );
-  }
-  
+    </div>
+  );
+}

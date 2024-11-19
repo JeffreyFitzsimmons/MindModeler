@@ -1,213 +1,280 @@
 /* Global Styles */
 * {
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    background: #333;
-    color: hsl(200, 100%, 90%);
-    max-width: 100%; /* Set max-width to 100% */
-    padding: 1rem;
-    margin: 0;
-  }
-  
-  /* App Container */
-  .app {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
-  
-  /* Header Styles */
-  .header {
-    background-color: hsl(200, 100%, 20%);
-    padding: 1rem 0;
-    width: 100%;
-    margin-bottom: 2rem;
-  }
-  
-  /* Navbar Styles */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%; /* Allow the navbar to span the full width */
-    margin: 0 auto; /* Center the content if there's a max-width */
-    padding: 0 2rem; /* Padding for spacing */
-  }
-  
-  .logo {
-    font-size: 1.8rem;
-    color: hsl(200, 100%, 90%);
-  }
-  
-  /* Navigation Links Styles */
-  .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1.5rem; /* Increase gap for better spacing */
-    justify-content: flex-end; /* Align navigation to the right */
-  }
-  
-  .nav-links li {
-    margin: 0;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: hsl(200, 100%, 70%);
-    font-weight: bold;
-    padding: 0.5rem;
-    transition: color 0.3s, border-bottom 0.3s;
-  }
-<<<<<<< Updated upstream
-  
-  .nav-links a:hover {
-    color: hsl(200, 100%, 90%);
-    border-bottom: 2px solid hsl(200, 100%, 50%);
-  }
-  
-  /* Form Styles */
-  .new-item-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .form-row {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1rem;
-  }
-  
-  /* Button Styles */
-  .btn {
-    background: hsla(200, 100%, 50%, 0.1);
-    border: 1px solid hsl(200, 100%, 50%);
-    color: hsl(200, 100%, 50%);
-    padding: 0.25em 0.5em;
-    border-radius: 0.25em;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .btn:hover,
-  .btn:focus-visible {
-    background: hsla(200, 100%, 50%, 0.2);
-  }
-  
-  .btn.btn-danger {
-    background: hsla(0, 100%, 40%, 0.1);
-    border: 1px solid hsl(0, 100%, 40%);
-    color: hsl(0, 100%, 40%);
-  }
-  
-  .btn.btn-danger:hover,
-  .btn.btn-danger:focus-visible {
-    background: hsla(0, 100%, 40%, 0.2);
-  }
-  
-  /* Input Styles */
-  .new-item-form input {
-    outline: none;
-    border: 1px solid hsl(200, 100%, 40%);
-    background: hsl(200, 100%, 30%);
-    border-radius: 0.25em;
-    padding: 0.25em 0.5em;
-    color: hsl(200, 100%, 90%);
-  }
-  
-  .new-item-form input:focus {
-    border: 1px solid hsl(200, 100%, 70%);
-  }
-  
-  /* List Styles */
-  .list {
-    margin-left: 1rem;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-  
-  .list li {
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  .list li label {
-    display: flex;
-    gap: 0.25rem;
-    cursor: pointer;
-    align-items: center;
-  }
-  
-  .list li:has(input:checked) label {
-    color: hsl(200, 20%, 40%);
-  }
-  
-  .list li:has(input:focus-visible) label {
-    outline: 1px solid hsl(200, 100%, 50%);
-  }
-  
-  /* Checkbox Styles */
-  .list li input {
-    outline: none;
-    width: 0;
-    height: 0;
-    appearance: none;
-    pointer-events: none;
-    position: absolute;
-  }
-  
-  .list li label::before {
-    content: "";
-    display: block;
-    width: 0.9rem;
-    height: 0.9rem;
-    background: hsl(200, 100%, 90%);
-    border-radius: 0.25em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .list li label:hover::before {
-    background: hsl(200, 100%, 80%);
-  }
-  
-  .list li:has(input:checked) label::before {
-    content: "✔";
-    background: hsl(200, 100%, 40%);
-    color: hsl(200, 100%, 90%);
-    font-size: 0.75rem;
-    font-weight: bold;
-  }
-  
-  .list li:has(input:checked) label:hover::before {
-    background: hsl(200, 100%, 30%);
-  }
-  
-  /* Responsive Styles */
-  @media (max-width: 768px) {
-    .navbar {
-      justify-content: space-between; /* Keep horizontal alignment */
-      padding: 0 1rem;
-    }
-  
-    .nav-links {
-      flex-wrap: wrap; /* Allow wrapping if needed */
-    }
-  }
-  
-=======
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background: #f7f7f7;
+  color: #333;
+  max-width: 100%; /* Set max-width to 100% */
+  padding: 1rem;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* App Container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+  background-color: #007bff;
+  padding: 1rem 0;
+  width: 100%;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.5rem;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0f8ff;
+  border-bottom: 2px solid #f0f8ff;
+}
+
+/* Main Content Area */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Form Styles */
+.new-item-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn {
+  background: #007bff;
+  border: 1px solid #007bff;
+  color: #fff;
+  padding: 0.75em 1.5em;
+  border-radius: 0.5em;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.btn.btn-danger {
+  background: #e74c3c;
+  border: 1px solid #e74c3c;
+  color: #fff;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+  background: #c0392b;
+}
+
+/* Input Styles */
+.new-item-form input {
+  outline: none;
+  border: 1px solid #007bff;
+  background: #f9f9f9;
+  border-radius: 0.5em;
+  padding: 1em;
+  color: #333;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.new-item-form input:focus {
+  border: 1px solid #0056b3;
+}
+
+/* List Styles */
+.list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list li label {
+  display: flex;
+  gap: 0.25rem;
+  cursor: pointer;
+  align-items: center;
+}
+
+.list li input {
+  display: none;
+}
+
+.list li label::before {
+  content: "";
+  display: block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #007bff;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.list li label:hover::before {
+  background: #0056b3;
+}
+
+.list li:has(input:checked) label::before {
+  content: "✔";
+  background: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* File Upload Section */
+.file-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  border: 2px dashed #007bff;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #f0f8ff;
+  transition: background-color 0.3s ease;
+  width: 60%;
+  max-width: 400px;
+  margin: 30px auto;
+}
+
+.file-upload:hover {
+  background-color: #e6f7ff;
+}
+
+.file-upload input[type="file"] {
+  display: none;
+}
+
+.file-upload .upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  border: 2px solid #007bff;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  background-color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+.file-upload .upload-area:hover {
+  background-color: #e6f7ff;
+}
+
+.file-upload .upload-area i {
+  font-size: 30px;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.file-upload .upload-area p {
+  font-size: 16px;
+  color: #007bff;
+}
+
+/* Progress Bar */
+.progress-bar {
+  width: 0;
+  height: 5px;
+  background-color: #28a745;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: width 0.4s ease;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 1rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .file-upload {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .main-content {
+    padding: 0.5rem;
+  }
+}
 
 /* styles.css */
 .resources-container {
@@ -263,4 +330,3 @@
 .resource-link:hover {
   text-decoration: underline;
 }
->>>>>>> Stashed changes
