@@ -13,9 +13,12 @@ export default function App() {
       <div className="app">
         <header className="header">
           <nav className="navbar">
-            <h1 className="logo">MRI Analysis</h1>
+            {/* Make the logo "MRI Analysis" clickable to navigate to home */}
+            <h1 className="logo">
+              <Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>MRI Analysis</Link>
+            </h1>
             <ul className="nav-links">
-              <li><Link to="/">Home</Link></li>
+              {/* Removed the Home link */}
               <li><Link to="/resources">Resources</Link></li>
               <li><Link to="/about">About</Link></li>
               <li><Link to="/contact">Contact</Link></li>

@@ -63,6 +63,7 @@
     padding: 0.5rem;
     transition: color 0.3s, border-bottom 0.3s;
   }
+<<<<<<< Updated upstream
   
   .nav-links a:hover {
     color: hsl(200, 100%, 90%);
@@ -204,3 +205,62 @@
     }
   }
   
+=======
+}
+
+
+/* styles.css */
+.resources-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.resources-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.resources-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns instead of 6 */
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.resource-item {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.resource-item:hover {
+  transform: translateY(-5px);
+}
+
+.resource-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.resource-title {
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.resource-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.resource-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.resource-link:hover {
+  text-decoration: underline;
+}
+>>>>>>> Stashed changes
